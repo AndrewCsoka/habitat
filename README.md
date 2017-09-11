@@ -26,6 +26,9 @@ The actions taken are determined by the variables set in a config file. A presen
 5. Mute speakers
   * string
   * e.g. `MUTE_SPEAKERS='true'`
+6. Enable Bluetooth
+  * string
+  * e.g. `BLUETOOTH='true'`
 
 #### To find the Chrome profile you'd like to load:
  * `cat ~/.config/google-chrome/Local\ State | jq .profile`

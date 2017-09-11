@@ -68,6 +68,10 @@ main () {
     start_chrome
   fi
 
+  if [ -n "$BLUETOOTH" ]; then
+    start_bluetooth
+  fi
+
   if [ -n "$TODO_LIST" ]; then
     cat_todo_list
   fi
@@ -151,6 +155,19 @@ start_chrome () {
   else
     fail "chrome"
   fi
+}
+
+start_bluetooth () {
+
+  rfkill unblock bluetooth
+
+  if [ $? -eq 0 ]
+  then
+    tick $1
+  else
+    fail $1
+  fi
+
 }
 
 cat_todo_list () {
