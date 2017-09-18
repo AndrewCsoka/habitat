@@ -68,7 +68,7 @@ main () {
     start_chrome
   fi
 
-  if [ -n "$BLUETOOTH" ]; then
+  if [ "$BLUETOOTH" == "true" ]; then
     start_bluetooth
   fi
 
