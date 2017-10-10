@@ -146,7 +146,7 @@ start_chrome () {
   # Start Chrome with profile & pages
   google-chrome \
       $WEBPAGES \
-      --profile-directory="Profile 1" \
+      --profile-directory="$CHROME_PROFILE" \
       > /dev/null 2>&1 &
 
   if [ $? -eq 0 ]

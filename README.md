@@ -17,16 +17,19 @@ The actions taken are determined by the variables set in a config file. A presen
 2. Start Chrome with certain webpages in a certain profile
   * string
   * e.g. `WEBPAGES="mail.google.com google.com"`
-3. Start some other programs
+3. Specify the chrome profile to be used
+  * string
+  * e.g. `CHROME_PROFILE="Default"`
+4. Start some other programs
   * array
   * e.g. `PROGRAMS=( slack skype )`
-4. Echo a file (e.g. todo list) to screen
+5. Echo a file (e.g. todo list) to screen
   * string
   * e.g. `TODO_LIST='~/todo'`
-5. Mute speakers
+6. Mute speakers
   * string
   * e.g. `MUTE_SPEAKERS='true'`
-6. Enable Bluetooth
+7. Enable Bluetooth
   * string
   * e.g. `BLUETOOTH='true'`
 
